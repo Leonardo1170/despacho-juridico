@@ -1,0 +1,176 @@
+/* General */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+header {
+    background-color: #1b3a57;
+    color: white;
+    padding: 1em 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+.navbar h1 {
+    font-size: 1.5em;
+    margin: 0;
+}
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Menú hamburguesa */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+.menu-toggle span {
+    height: 3px;
+    width: 25px;
+    background: white;
+    margin: 4px 0;
+}
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #1b3a57;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        padding: 10px;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .menu-toggle {
+        display: flex;
+    }
+}
+
+/* Secciones */
+section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 20px;
+}
+section h2 {
+    color: #1b3a57;
+    margin-bottom: 20px;
+}
+/* Equipo */
+.equipo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* siempre 3 columnas */
+    gap: 20px;
+    justify-items: center; /* centra las tarjetas en cada columna */
+}
+.abogado {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 300px; /* ancho máximo para que no se estiren demasiado */
+}
+.abogado img {
+    width: 100%;
+    height: 400px; /* altura fija */
+    object-fit: cover; /* recorta y mantiene proporción */
+    border-radius: 10px;
+    display: block;
+}
+.servicios-lista {
+    list-style: none;
+    padding: 0;
+}
+.servicios-lista li {
+    background: white;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+/* Formulario */
+form {
+    display: grid;
+    gap: 15px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    background: #1b3a57;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background: #145087;
+}
+
+/* WhatsApp Flotante */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    z-index: 1000;
+    text-decoration: none;
+}
+.whatsapp-float:hover {
+    background-color: #20b955;
+}
+
+@media (max-width: 900px) {
+    .equipo {
+        grid-template-columns: repeat(2, 1fr); /* 2 en tablet */
+    }
+}
+
+@media (max-width: 600px) {
+    .equipo {
+        grid-template-columns: 1fr; /* 1 por fila en celular */
+    }
+}
