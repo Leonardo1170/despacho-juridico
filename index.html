@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoHogar - Novedades</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Ajuste de tamaño para todas las imágenes de productos */
+        .tarjeta img {
+            width: 100%;
+            height: 300px; /* altura fija */
+            object-fit: cover; /* recorta manteniendo proporción */
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>EcoHogar</h1>
+        <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="activo">Novedades</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="info.html">Beneficios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contenido">
+        <h2>Novedades</h2>
+        <p>En EcoHogar nos mantenemos a la vanguardia en innovación ecológica, incorporando productos que cuidan el medio ambiente y mejoran tu calidad de vida. Descubre nuestras últimas incorporaciones, seleccionadas cuidadosamente por su calidad, durabilidad y bajo impacto ambiental.</p>
+        
+        <div class="novedades-grid">
+            <!-- Producto 1 -->
+            <div class="tarjeta">
+                <img src="https://es.sumboom.com/uploads/202236648/eco-friendly-bamboo-water-bottle04295676528.jpg" alt="Botella reutilizable de bambú">
+                <h3>Botella reutilizable de bambú</h3>
+                <p>Fabricada con bambú natural y acero inoxidable, libre de BPA, perfecta para mantener bebidas frías o calientes durante horas. Su diseño elegante y resistente la convierte en el accesorio ideal para tu día a día.</p>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="tarjeta">
+                <img src="https://tse4.mm.bing.net/th/id/OIP.SOli8MGeJSn6m0sBubrhRQHaHa?w=1200&h=1200&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Detergente ecológico">
+                <h3>Detergente ecológico</h3>
+                <p>Con ingredientes biodegradables, sin fosfatos ni químicos agresivos. Cuida tu ropa y el medio ambiente, protegiendo también la salud de tu familia, especialmente de personas con piel sensible.</p>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="tarjeta">
+                <img src="https://tse2.mm.bing.net/th/id/OIP.NkYRMv_XbPcHAPvO-JRhDAHaIf?pid=ImgDet&w=181&h=208&c=7&o=7&rm=3" alt="Maceta reciclada">
+                <h3>Maceta reciclada</h3>
+                <p>Elaborada con plásticos reciclados y pintada con tintes naturales. Ideal para plantas de interior o exterior, combinando sostenibilidad y decoración moderna.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>EcoHogar &copy; 2025 - Cuidando tu hogar y el planeta</p>
+    </footer>
+    <script>
+document.addEventListener("DOMContentLoaded", () => {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navMenu = document.querySelector("nav ul");
+
+    menuToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("show");
+    });
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoHogar - Productos</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Ajuste de tamaño para todas las imágenes de productos */
+        .tarjeta img {
+            width: 100%;
+            height: 300px; /* altura fija */
+            object-fit: cover; /* recorta manteniendo proporción */
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>EcoHogar</h1>
+        <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Novedades</a></li>
+                <li><a href="productos.html" class="activo">Productos</a></li>
+                <li><a href="info.html">Beneficios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contenido">
+        <h2>Productos Ecológicos</h2>
+        <p>En EcoHogar ofrecemos una amplia gama de productos diseñados para reducir el impacto ambiental y mejorar tu calidad de vida. Aquí encontrarás soluciones sostenibles para cada rincón de tu hogar.</p>
+
+         <div class="novedades-grid">
+
+            <!-- Producto 1 -->
+            <div class="tarjeta">
+                <img src="https://es.sumboom.com/uploads/202236648/eco-friendly-bamboo-water-bottle04295676528.jpg">
+                <h3>Botella reutilizable de bambú</h3>
+                <p>Libre de plástico, duradera y 100% biodegradable. Ideal para bebidas frías o calientes.</p>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="tarjeta">
+                <img src="https://tse4.mm.bing.net/th/id/OIP.SOli8MGeJSn6m0sBubrhRQHaHa?w=1200&h=1200&rs=1&pid=ImgDetMain&o=7&rm=3">
+                <h3>Detergente ecológico</h3>
+                <p>Fórmula sin químicos dañinos, ideal para pieles sensibles y biodegradable.</p>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="tarjeta">
+                <img src="data:image/webp;base64,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">
+                <h3>Bolsa de tela reutilizable</h3>
+                <p>Fabricada con algodón orgánico, resistente y perfecta para tus compras diarias.</p>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="tarjeta">
+                <img src="https://tse4.mm.bing.net/th/id/OIP.-JcGSpdXddWhwhbvnIMVlAHaHa?w=1024&h=1024&rs=1&pid=ImgDetMain&o=7&rm=3">
+                <h3>Cepillo de dientes de bambú</h3>
+                <p>Alternativa ecológica a los cepillos plásticos. Biodegradable y suave con tus encías.</p>
+            </div>
+
+            <!-- Producto 5 -->
+            <div class="tarjeta">
+                <img src="https://tse2.mm.bing.net/th/id/OIP.d5s11kWHXZDIWPPIl9sg6AHaLG?pid=ImgDet&w=192&h=288&c=7&o=7&rm=3">
+                <h3>Set de cubiertos de bambú</h3>
+                <p>Incluye cuchara, tenedor, cuchillo y palillos. Ligero y fácil de transportar.</p>
+            </div>
+
+            <!-- Producto 6 -->
+            <div class="tarjeta">
+                <img src="https://tse3.mm.bing.net/th/id/OIP.mexXv0fDZz6cLUfj8We7TwAAAA?pid=ImgDet&w=192&h=272&c=7&o=7&rm=3">
+                <h3>Jabón artesanal</h3>
+                <p>Hecho a mano con aceites naturales, libre de parabenos y fragancias sintéticas.</p>
+            </div>
+
+            <!-- Producto 7 -->
+            <div class="tarjeta">
+                <img src="https://www.giftcampaign.es/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/m/o/mo2061_06a_fo.jpg">
+                <h3>Velas de cera vegetal</h3>
+                <p>Velas aromáticas hechas con cera de soja, sin emisiones tóxicas.</p>
+            </div>
+
+            <!-- Producto 8 -->
+            <div class="tarjeta">
+                <img src="https://tse3.mm.bing.net/th/id/OIP.BFjAnOM1g9_caBDXA8MAygHaHa?pid=ImgDet&w=192&h=192&c=7&o=7&rm=3">
+                <h3>Filtro de carbón activado</h3>
+                <p>Purifica el agua de forma natural, eliminando impurezas y mejorando el sabor.</p>
+            </div>
+
+            <!-- Producto 9 -->
+            <div class="tarjeta">
+                <img src="https://tse3.mm.bing.net/th/id/OIP.4zB05PCyG2RqX2IUq3H3AAHaJS?w=600&h=752&rs=1&pid=ImgDetMain&o=7&rm=3">
+                <h3>Compostadora doméstica</h3>
+                <p>Convierte tus desechos orgánicos en abono natural para tus plantas.</p>
+            </div>
+
+            <!-- Producto 10 -->
+            <div class="tarjeta">
+                <img src="https://tse1.mm.bing.net/th/id/OIP.rb8d9rx_mHHw5EPkT0LNzgAAAA?pid=ImgDet&w=192&h=256&c=7&o=7&rm=3">
+                <h3>Toalla de bambú</h3>
+                <p>Suave, absorbente y antibacteriana. Perfecta para pieles delicadas.</p>
+                </div>
+
+            <!-- Producto 11 -->
+            <div class="tarjeta">
+                <img src="https://tse2.mm.bing.net/th/id/OIP.NkYRMv_XbPcHAPvO-JRhDAHaIf?pid=ImgDet&w=181&h=208&c=7&o=7&rm=3">
+                <h3>Maceta reciclada</h3>
+                <p>Fabricada con materiales reciclados y pintada con tintes naturales.</p>
+            </div>
+
+            <!-- Producto 12 -->
+            <div class="tarjeta">
+                <img src="https://tse1.mm.bing.net/th/id/OIP.G54TCW3Z21MrnQjALV91KgHaE7?pid=ImgDet&w=192&h=128&c=7&o=7&rm=3">
+                <h3>Esponja natural</h3>
+                <p>Hecha de fibras vegetales, ideal para baño y cocina, 100% biodegradable.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>EcoHogar &copy; 2025 - Cuidando tu hogar y el planeta</p>
+    </footer>
+    <script>
+document.addEventListener("DOMContentLoaded", () => {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navMenu = document.querySelector("nav ul");
+
+    menuToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("show");
+    });
+});
+</script>
+</body>
+</html>

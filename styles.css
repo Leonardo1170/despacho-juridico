@@ -1,0 +1,307 @@
+/* Estilo general */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    background-color: #AED581;
+    padding: 1em;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: #8D6E63;
+}
+
+/* Menú de navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1em 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    flex-wrap: wrap; /* Para que en pantallas pequeñas se acomode */
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #8D6E63;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    transition: background 0.3s;
+    display: inline-block;
+}
+
+nav a:hover,
+nav a.activo {
+    background-color: #6d4c41;
+}
+
+/* Contenido principal */
+.contenido {
+    padding: 2em;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Grillas de productos o categorías */
+.novedades-grid,
+.categorias-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5em;
+}
+
+.tarjeta {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 1em;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Formulario */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    background: #f5f5f5;
+    padding: 1.5em;
+    border-radius: 10px;
+}
+
+.formulario input,
+.formulario textarea {
+    padding: 0.7em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.formulario button {
+    background-color: #AED581;
+    color: #8D6E63;
+    padding: 0.8em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.formulario button:hover {
+    background-color: #9ccc65;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    background-color: #8D6E63;
+    color: white;
+    padding: 1em;
+    margin-top: 2em;
+}
+
+/* ---------------- Responsividad ---------------- */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .tarjeta img {
+        height: 180px;
+    }
+
+    .contenido {
+        padding: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    .tarjeta img {
+        height: 150px;
+    }
+
+    .formulario {
+        padding: 1em;
+    }
+}
+
+/* General */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    background-color: #AED581;
+    padding: 1em;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    color: #8D6E63;
+}
+
+/* Botón hamburguesa */
+.menu-toggle {
+    display: none;
+    font-size: 1.8em;
+    background: none;
+    border: none;
+    color: #8D6E63;
+    cursor: pointer;
+}
+
+/* Menú de navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1em 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #8D6E63;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+nav a:hover,
+nav a.activo {
+    background-color: #6d4c41;
+}
+
+/* Contenido */
+.contenido {
+    padding: 2em;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Grids */
+.novedades-grid,
+.categorias-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5em;
+}
+
+.tarjeta {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 1em;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Formulario */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    background: #f5f5f5;
+    padding: 1.5em;
+    border-radius: 10px;
+}
+
+.formulario input,
+.formulario textarea {
+    padding: 0.7em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.formulario button {
+    background-color: #AED581;
+    color: #8D6E63;
+    padding: 0.8em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background-color: #9ccc65;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #8D6E63;
+    color: white;
+    padding: 1em;
+    margin-top: 2em;
+}
+
+/* -------- Responsivo con menú hamburguesa -------- */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        right: 1em;
+        top: 1em;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: #AED581;
+        padding: 1em;
+        margin-top: 1em;
+        border-radius: 8px;
+    }
+
+    nav ul.show {
+        display: flex;
+        animation: slideDown 0.3s ease;
+    }
+
+    @keyframes slideDown {
+        from {opacity: 0; transform: translateY(-10px);}
+        to {opacity: 1; transform: translateY(0);}
+    }
+}

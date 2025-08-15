@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoHogar - Beneficios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>EcoHogar</h1>
+        <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Novedades</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="info.html" class="activo">Beneficios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contenido">
+        <h2>Beneficios ecológicos</h2>
+        <p>Optar por productos ecológicos no solo ayuda al planeta, sino que también ofrece ventajas directas para tu salud, tu economía y tu estilo de vida. En EcoHogar creemos que cada pequeña acción cuenta y puede generar un impacto positivo duradero.</p>
+        
+        <ul>
+            <li><strong>Reducción de residuos plásticos:</strong> Al elegir materiales biodegradables o reutilizables, disminuimos la contaminación en océanos y suelos.</li>
+            <li><strong>Menor huella de carbono:</strong> Nuestros productos se fabrican con procesos que reducen el consumo de energía y emisiones de CO₂.</li>
+            <li><strong>Protección de la salud familiar:</strong> Sin químicos tóxicos ni sustancias dañinas, ideales para personas con alergias o piel sensible.</li>
+            <li><strong>Durabilidad y ahorro económico:</strong> Productos de alta calidad que pueden durar años, evitando compras repetitivas.</li>
+            <li><strong>Apoyo a la economía local:</strong> Muchos de nuestros artículos son elaborados por artesanos y pequeños productores.</li>
+            <li><strong>Conexión con la naturaleza:</strong> Usar productos naturales fomenta un estilo de vida más consciente y armonioso.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>EcoHogar &copy; 2025 - Cuidando tu hogar y el planeta</p>
+    </footer>
+    <script>
+document.addEventListener("DOMContentLoaded", () => {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navMenu = document.querySelector("nav ul");
+
+    menuToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("show");
+    });
+});
+</script>
+</body>
+</html>
